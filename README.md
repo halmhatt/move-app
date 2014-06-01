@@ -3,10 +3,12 @@ move-app
 
 An app that moves files to remotes. It syncs but then removes the files localy
 
+*This does not work yet! Under development*
+
 ## Usage
 Start server
 
-```shell
+```bash
 move-app ~/move-app/
 ```
 
@@ -61,3 +63,17 @@ Type: `String`
 
 ### ignore
 Files to ignore, these will not be synced. Please feel free to ignore the `.move-app.json`. 
+
+
+## CLI
+If you use the flag `--help` you will get help about all the commands and flags available.
+
+```bash
+Usage: move-app [flags][subdir/|start]
+	--help	Show this help message
+
+	start 	Start move-app as a daemon
+	ls 		List remote files in this directory
+	test	Run a test checks that all steps are working correctly
+	init	Initialize a .move-app.json config file
+```
